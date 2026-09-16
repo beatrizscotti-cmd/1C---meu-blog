@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogss</title>
+<style>
+        header{
+            background-color: rgb(112, 57, 139);
+            color:antiquewhite;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid antiquewhite;
+        }
+        main{
+           background-color: antiquewhite;
+           color: rgb(112, 57, 139);
+           max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        } 
+        article{
+        display: flex;
+            
+        }
+        img{
+            width: 140px;
+            height: 140px;
+        }
+        .artigo-autor{
+            font-weight: bold;
+        }
+</style>
+</head>
+<body>
+<header>
+    <h1>Universo Felino</h1>
+
+    <p>vou compartilhar conhecimentos sobre os gatos e suas caracteristicas </p>
+</header>
+<main>
+    <article>
+
+        <img src="Gemini_Generated_Image_sq2r00sq2r00sq2r.png" alt="Banner promocional com fundo cor rosa, exibindo a frase 'Gatos, Blog, raças e curiosidades' em letras azul claro e escuro. a baixo imagens de três gatos, um laranja, um branco e o outro preto">
+    <div>
+        <h2>meu primeiro post</h2>
+        <p class="artigo-autor">por: Beatriz Cristina Grein Scotti</p>
+        <p>seja bem-vindo ao meu novo blog!! aqui vou falar sobre os gatos e suas caracteristicas, suas diversas raças, trejeitos e curiosidades. </p>
+    <button>❤️<span>0</span></button>
+    <button> 💔<span>0</span></button>
+    <h2>Bem-vindos ao blog!</h2> 
+    
+    <p>Seja bem-vindo ao espaço onde a elegância, a curiosidade e o mistério caminham em quatro patas! Aqui, mergulhamos no universo fascinante dos gatos, das raças mais bonitas e exóticas aos nossos amados e imprevisíveis companheiros sem raça definida. Cada felino carrega uma personalidade única, traduzida em miados expressivos, olhar atento e aqueles trejeitos cômicos e encantadores que só quem vive com um entende. Se você é apaixonado por decifrar a mente felina e quer descobrir os segredos por trás das características de cada raça, este é o seu lugar.</p>
+
+    <h2> Conheça as raças:</h2>
+
+    <p>Os gatos encantam pela incrível variedade de formas, tamanhos e personalidades que se manifestam em suas diferentes raças. Enquanto o Maine Coon impressiona pelo porte avantajado e pela pelagem fofa adaptada ao frio, o Siamês chama a atenção por suas orelhas pontiagudas, olhos azuis marcantes e temperamento altamente comunicativo. Raças como o Persa, famoso pelo focinho achatado e temperamento tranquilo, ou o Sphynx, conhecido por sua aparência exótica sem pelos, mostram como a evolução e a seleção genética criaram felinos para todos os gostos. Mesmo com tantas particularidades físicas e comportamentais ligadas às linhagens puras, todos eles compartilham o instinto aguçado, a elegância nos movimentos e a independência característica que definem a essência do mundo felino.</p>
+    <p class="artigo-autor">As principais raças de A a Z</p>
+    <p> 
+        Abissínio
+
+American Burmese (Burmês Americano)
+
+American Curl
+
+American Shorthair (Americano de Pêlo Curtó)
+
+American Wirehair
+
+Angorá Turco
+
+Australian Mist
+
+Balinês
+
+Bengal (Gato de Bengala)
+
+Birmanês (Sagrado da Birmânia)
+
+Bombay
+
+British Longhair (Britânico de Pêlo Longo)
+
+British Shorthair (Britânico de Pêlo Curto)
+
+Burmês
+
+Burmilla
+
+Chartreux
+
+Chausie
+
+Cornish Rex
+
+Cymric
+
+Devon Rex
+
+Donskoy
+
+Dragon Li
+
+Mau Egípcio
+
+European Shorthair (Europeu de Pêlo Curto)
+
+Exotic Shorthair (Exótico)
+
+German Rex
+
+Havana Brown; Himalayan (Himalaio); Japanese Bobtail (Bobtail Japonês); Javanês; Korat; Kurilian Bobtail; LaPerm; Lykoi; Maine Coon; Manx; Munchkin; Neva Masquerade; Norueguês da Floresta; Ocicat; Oriental (Shorthair e Longhair); Persa; Peterbald; Pixie-bob; Ragdoll; Ragamuffin; Russian Blue (Azul Russo); Savannah; Scottish Fold; Selkirk Rex; Siamês; Siberiano; Singapura; Snowshoe; Sokoke; Somali; Sphynx; Thai; Tonquinês; Toyger; Turkish Van (Van Turco)
+    </p>
+
+</div>
+
+
+</article>
+
+
+</main>    
+</body>
+<script> 
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach( function(botao){
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+    function botaoClicado(){
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        if (curtiu === false){
+        texto.textContent++;
+        curtiu = true;
+
+        } else{
+            texto.textContent--;
+            curtiu = false;
+        }
+    }
+}
+)
+</script>
