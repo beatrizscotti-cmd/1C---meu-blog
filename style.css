@@ -5,6 +5,8 @@
    --cor-texto: rgb(14, 1, 28); 
    --cor-contraste: rgb(250, 248, 252);
    --cor-botao: rgb(154, 131, 177);
+
+   --fonte-texto: Arial, Helvetica, sans-serif
 }
 
 .tema-escuro {
@@ -16,8 +18,22 @@
    --cor-botao: rgb(43, 17, 69);
 }
 
+.tema-escuro a {
+    color: var(--cor-secundaria);
+}
+
+.tema-escuro p {
+    color: var(--cor-texto);
+}
+
+.tema-escuro header p {
+    color: var(--cor-contraste);
+}
+
+
 body {
    max-width: 100vw;
+   font-family: var(--fonte-texto);
 
 }
 
